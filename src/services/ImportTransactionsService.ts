@@ -16,7 +16,6 @@ interface CSVTransaction {
 
 class ImportTransactionsService {
   async execute(filePath: string): Promise<Transaction[]> {
-    // TODO
     const transactionRepository = getCustomRepository(TransactionsRepository);
     const categoriesRepository = getRepository(Category);
 
@@ -50,7 +49,6 @@ class ImportTransactionsService {
         title: In(categories),
       },
     });
-
     const existentCategoriesTitles = existentCategories.map(
       (category: Category) => category.title,
     );
@@ -87,5 +85,4 @@ class ImportTransactionsService {
     return createdTransactions;
   }
 }
-
 export default ImportTransactionsService;
