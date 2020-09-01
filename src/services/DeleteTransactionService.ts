@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { getCustomRepository } from 'typeorm';
 
 import AppError from '../errors/AppError';
