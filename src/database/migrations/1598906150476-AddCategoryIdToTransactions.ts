@@ -11,7 +11,7 @@ export default class AddCategoryIdToTransactions1598906150476
     await queryRunner.addColumn(
       'transactions',
       new TableColumn({
-        name: 'category',
+        name: 'category_id',
         type: 'uuid',
         isNullable: true,
       }),
